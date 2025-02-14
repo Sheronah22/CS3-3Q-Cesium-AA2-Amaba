@@ -6,9 +6,9 @@ function calculatePopulation() {
         return;
     }
 
-    let finalPop = Math.round(startPop * Math.exp(growthRate * time));
+    let finalPop = Math.round(initialPopulation * Math.exp(growthRate * time));
     
-    let place = prompt("Enter the monster’s location:");
+    let region = prompt("Enter the monster’s location:");
     let monster = prompt("Enter the monster’s name:");
 
     let fullName = (place + " " + monster).toUpperCase();
